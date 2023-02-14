@@ -1,0 +1,84 @@
+.activity {
+  width: 14vw;
+  height: auto;
+  margin: 14px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.activity:hover {
+  transition: all .3s ease-in-out; 
+  transform: scale(1.1);
+  cursor:pointer;
+}
+.activity:hover p {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+
+.activitycontent {
+  position: relative;
+}
+
+
+.activitycontent p {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  opacity: 0;
+  font-weight: bold;
+  text-shadow: 0 0 0.5vw var(--primarytextcolor);
+  color: var(--secondarytextcolor);
+  line-height: 90%;
+  width: 14vw;
+  font-size: 1.2vw;
+}
+
+.activitycontent img {
+  height: 90%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+
+#activitiescontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+  width: 100%;
+}
+
+#activitysfilter {
+  margin: 0.5vw;
+}
+
+#searchbar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchbar {
+  width: 40vw;
+  height: 3vw;
+  border-radius: 20px;
+  border: 1px solid var(--secondaryaccentcolor);
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  color: var(--primarytextcolor);
+  background-color: var(--secondarytextcolor);
+  text-align: center;
+}
