@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>My Drive - Google Drive</title>
+<meta name="title" content="ExtremeMath - The Simplest Form of Education">
+<meta name="description" content="On ExtremeMath, you can join thousands of people worldwide on the most innovative and exquisite learning platform!">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ExtremeMath - The Simplest Form of Education">
+<meta property="og:description" content="On ExtremeMath, you can join thousands of people worldwide on the most innovative and exquisite learning platform!">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="ExtremeMath - The Simplest Form of Education">
+<meta property="twitter:description" content="On ExtremeMath, you can join thousands of people worldwide on the most innovative and exquisite learning platform!">
+
+<link id="favicon" rel="icon" href="favicon.ico" sizes="16x16" type="image/ico">
+<link rel="stylesheet" href="css/2.1.0.5.2/header.css">
+<link rel="stylesheet" href="css/2.1.0.5.2/footer.css">
+<link rel="stylesheet" href="css/2.1.0.5.2/settings.css">
+<div class="header">
+<div class="header-left">
+<a id="library-button" href="library.html">🎮Library</a>
+<a id="apps-button" href="apps.html">📱Apps</a>
+<a id="chatbox-button" href="chatbox.html">🗣Chatbox</a>
+<a href="about:blank" target="_blank" onclick="window.open('https://discord.com/invite/DPfbgyMEuP')">➕More Links</a>
+</div>
+<div class="header-center">
+<a href="index.html" id="extrememath">ExtremeMath</a>
+</div>
+<div class="header-right">
+<img class="socials" id="social-twitter" width="50" height="50" alt="Socials Twitter Button" onclick="window.open('https://twitter.com/extrememaths','_blank')" src="images/twitter.webp">
+<img class="socials" id="social-discord" width="50" height="50" alt="Socials Discord Button" onclick="window.open('https://discord.com/invite/DPfbgyMEuP','_blank')" src="images/discord.webp">
+<img class="socials" id="social-tiktok" width="50" height="50" alt="Socials Tiktok Button" onclick="window.open('https://tiktok.com/@extrememath.cyou','_blank')" src="images/tiktok.webp">
+<img class="header-settings" id="header-login" width="50" height="50" alt="login Button" onclick="alert('Coming soon!')" src="images/login.webp">
+<img class="header-settings" id="header-cog" width="50" height="50" alt="Settings Button" onclick="document.getElementById('popup').style.visibility = 'visible';" src="images/gearcog.webp">
+</div>
+</div>
+<script>
+  partytown = {
+      forward: ['dataLayer.push'],
+    };
+</script>
+<script src="~partytown/partytown.js"></script>
+
+<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-RN70QKS7TJ"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-RN70QKS7TJ');
+</script>
+
+<script>
+  const extrememath = document.getElementById("extrememath");
+  const librarybutton = document.getElementById("library-button");
+  const appsbutton = document.getElementById("apps-button");
+  const chatboxbutton = document.getElementById("chatbox-button");
+  switch (location.pathname) {
+    case "/":
+      extrememath.className = "currentpage";
+      break;
+    case "/library":
+      librarybutton.className = "currentpage";
+      break;
+    case "/apps":
+      appsbutton.className = "currentpage";
+      break;
+    case "/chatbox":
+      chatboxbutton.className = "currentpage";
+      break;
+  }
+</script>
+<style>
+      #body-container {
+        text-align: center;
+      }
+      #chatbox {
+        margin-top: 2vw;
+      }
+
+    </style>
+</head>
+<body>
+<div id="body-container">
+<div id="div-chatbox">
+<iframe id="chatbox" src="https://e.widgetbot.io/channels/942214712349818880/948681836480053268" width="1024px" height="640px"></iframe>
+</div>
+<input type="image" src="images/fullscreen.webp" width="50" height="50" style="height: 3vw; width: 3vw;" id="fullscreen" onclick="requestFullScreen('chatbox')" />
+</div>
+<div id="confirmabcloak" onclick="abCloak(window.location.href)">
+<div id="confirmabcloakinner">
+<p><b>Click anywhere to continue to Cloaked ExtremeMath</b></p>
+<p id="abdisclaimer">This allows your search history to not show up for the site. By pressing `, the default Panic Key, it opens google. To customize these, open settings.</p>
+<button id="abcloakpromptclose" onclick="abCloakPromptClose(event);">Close Prompt</button>
+</div>
+</div>
+<div id="confirmnormal" onclick="normalSite()">
+<div id="confirmnormalinner">
+<p><b>Click anywhere to continue to NORMAL ExtremeMath</b></p>
+<button id="normalpromptclose" onclick="normalPromptClose(event);">Close Prompt</button>
+</div>
+</div>
+<div id="popup">
+<div id="popup-top">
+<h1 id="settings-text">Settings</h1>
+<img src="images/closebutton.webp" id="popup-closebtn" onclick="document.getElementById('popup').style.visibility = 'hidden';"></img>
+</div>
+<div id="popup-aboutblank">
+<div id="popup-aboutblank-text">
+<h2 id=aboutblank-text>About Blank Cloaking: </h2>
+</div>
+<div id="popup-aboutblank-toggle">
+<label class="ablabel" for="abtoggle">
+<input class="abtoggle_input" name="" type="checkbox" id="abtoggle" onchange="abcloakOption()">
+<div class="abtoggle_fill"></div>
+</label>
+</div>
+</div>
+<div id="popup-tab-cloaking">
+<div id="pagecloak-text">
+<h2 id="popup-tabcloaking-text">Tab Cloaking: </h2>
+</div>
+<div id="pagecloak-interact">
+<div id="pagecloak-interact-input">
+<input id="tabcloak-input" placeholder="Icon URL/Title Here">
+</div>
+<div id="tabcloak-buttons">
+<button onclick="tabCloakTitle()" id="tabcloak-title" class="tabcloak-buttons">Title</button>
+<button onclick="tabCloakIcon()" id="tabcloak-icon" class="tabcloak-buttons">Icon</button>
+<button onclick="tabCloakReset()" id="tabcloak-reset" class="tabcloak-buttons">Reset</button>
+</div>
+</div>
+</div>
+<div id="panic-section">
+<div id="panic-header">
+<h2 id="panic-options-header">Panic Options</h2>
+</div>
+<div id="panic-options">
+<div id="panic-site">
+<div id="panic-site-header">
+<h3 id="panic-site-text">Site:</h3>
+</div>
+<div id="panic-site-input-wrapper">
+<input id="panic-site-input" placeholder="Site URL Here">
+</div>
+</div>
+<div id="panic-key">
+<div id="panic-key-text-header">
+<h3 id="panic-key-text">Key:</h3>
+</div>
+<div id="panic-key-selection">
+<input id="panic-key-input" list="panic-key-list" title="Type in and then select from the list of keys">
+<datalist id="panic-key-list">
+<option id="panic-option">
+Backspace
+</option>
+<option id="panic-option">
+Tab
+</option>
+<option id="panic-option">
+Enter
+</option>
+<option id="panic-option">
+Shift
+</option>
+<option id="panic-option">
+Control
+</option>
+<option id="panic-option">
+Alt
+</option>
+<option id="panic-option">
+CapsLock
+</option>
+<option id="panic-option">
+Escape
+</option>
+<option id="panic-option">
+Space
+</option>
+<option id="panic-option">
+PageUp
+</option>
+<option id="panic-option">
+PageDown
+</option>
+<option id="panic-option">
+ArrowLeft
+</option>
+<option id="panic-option">
+ArrowUp
+</option>
+<option id="panic-option">
+ArrowRight
+</option>
+<option id="panic-option">
+ArrowDown
+</option>
+<option id="panic-option">
+Insert
+</option>
+<option id="panic-option">
+Delete
+</option>
+<option id="panic-option">
+0
+</option>
+<option id="panic-option">
+1
+</option>
+<option id="panic-option">
+2
+</option>
+<option id="panic-option">
+3
+</option>
+<option id="panic-option">
+4
+</option>
+<option id="panic-option">
+5
+</option>
+<option id="panic-option">
+6
+</option>
+<option id="panic-option">
+7
+</option>
+<option id="panic-option">
+8
+</option>
+<option id="panic-option">
+9
+</option>
+<option id="panic-option">
+a
+</option>
+<option id="panic-option">
+b
+</option>
+<option id="panic-option">
+c
+</option>
+<option id="panic-option">
+d
+</option>
+<option id="panic-option">
+e
+</option>
+<option id="panic-option">
+f
+</option>
+<option id="panic-option">
+g
+</option>
+<option id="panic-option">
+h
+</option>
+<option id="panic-option">
+i
+</option>
+<option id="panic-option">
+j
+</option>
+<option id="panic-option">
+k
+</option>
+<option id="panic-option">
+l
+</option>
+<option id="panic-option">
+m
+</option>
+<option id="panic-option">
+n
+</option>
+<option id="panic-option">
+o
+</option>
+<option id="panic-option">
+p
+</option>
+<option id="panic-option">
+q
+</option>
+
+<option id="panic-option">
+r
+</option>
+<option id="panic-option">
+s
+</option>
+<option id="panic-option">
+t
+</option>
+<option id="panic-option">
+u
+</option>
+<option id="panic-option">
+v
+</option>
+<option id="panic-option">
+w
+</option>
+<option id="panic-option">
+x
+</option>
+<option id="panic-option">
+y
+</option>
+<option id="panic-option">
+z
+</option>
+</datalist>
+</div>
+</div>
+</div>
+</div>
+<div id="customization-section">
+<h2 id="customization-header">Customization</h2>
+<div id="customization-section-content">
+<div id="customization-section-theme">
+<div id="customization-header-theme">
+<h3 id="customization-header-theme-text">Theme:</h3>
+</div>
+<div id="customization-theme-buttons">
+<button id="theme-default" class="theme-buttons" onclick="themeButtonListenener(this.id)">Default</button>
+<button id="theme-dark" class="theme-buttons" onclick="themeButtonListenener(this.id)">Dark</button>
+<button id="theme-ocean" class="theme-buttons" onclick="themeButtonListenener(this.id)">Ocean</button>
+<button id="theme-morning" class="theme-buttons" onclick="themeButtonListenener(this.id)">Morning</button>
+<button id="theme-cherryblossom" class="theme-buttons" onclick="themeButtonListenener(this.id)">Cherry Blossom</button>
+<button id="theme-night" class="theme-buttons" onclick="themeButtonListenener(this.id)">Night</button>
+<button id="theme-seasonal" class="theme-buttons" onclick="themeButtonListenener(this.id)">Seasonal</button>
+<button id="theme-custom" class="theme-buttons" onclick="themeButtonListenener(this.id)">Custom</button>
+</div>
+</div>
+<div id="customization-section-custom-theme">
+<div id="customization-header-custom-theme">
+<h3 id="customization-header-custom-theme-text">Custom Theme:</h3>
+</div>
+<div id="customization-custom-theme-font">
+<div id="customization-custom-theme-font-header">
+<p id="customization-custom-theme-font-text">Font Family:</p>
+</div>
+<div id="customization-custom-theme-font-input-wrapper">
+<input id="customization-custom-theme-font-input" list="custom-font-list" title="Choose font from autofill list" value="Dosis">
+<datalist id="custom-font-list">
+<option class="font-option">
+Dosis
+</option>
+<option class="font-option">
+Arial
+</option>
+<option class="font-option">
+Verdana
+</option>
+<option class="font-option">
+Tahoma
+</option>
+<option class="font-option">
+Trebuchet MS
+</option>
+<option class="font-option">
+Times New Roman
+</option>
+<option class="font-option">
+Georgia
+</option>
+<option class="font-option">
+Garamond
+ </option>
+<option class="font-option">
+Courier New
+</option>
+<option class="font-option">
+Brush Script MT
+</option>
+</datalist>
+</div>
+</div>
+<div id="customization-custom-theme-input-wrapper">
+<input class="customization-custom-theme-inputs" id="backgroundcolor" type="color" title="Background Color">
+<input class="customization-custom-theme-inputs" id="primarytextcolor" type="color" title="Primary Text Color (Ex: Header)">
+<input class="customization-custom-theme-inputs" id="secondarytextcolor" type="color" title="Secondary Text Color (Ex: Footer)">
+<input class="customization-custom-theme-inputs" id="accentcolor" type="color" title="Accent Color (Ex: Border Color)">
+<input class="customization-custom-theme-inputs" id="secondaryaccentcolor" type="color" title="Secondary Accent Color (Ex: Background of Toggle Button for AB Cloaking)">
+<input class="customization-custom-theme-inputs" id="tertiaryaccentcolor" type="color" title="Tertiary Accent Color (Ex: Tab Cloaking Hover Color)">
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/2.1.0.5.2/settings.js"></script>
+<footer>
+<div class="footer-wrap">
+<img class="footer-bg" src="images/footerbackground.webp" alt="Footer Image">
+<div class="divs" id="creators">
+<h1>Creators</h1>
+<h2>Grave#9950 <br> Skyflyer#4709</h2>
+</div>
+<div class="divs" id="logo">
+<img width="200" height="200" id="logoimage" src="images/logo.webp" alt="ExtremeMath Logo"></img>
+<p id="footertext"><a href="privacypolicy.html">Privacy Policy</a> | ©2022 ExtremeMath | <a href="termsofuse.html">Terms of Use</a></p>
+</div>
+<div class="divs" id="contactinfo">
+<h1>Contact Information</h1>
+<a href="cdn-cgi/l/email-protection.html#630b060f134d061b1711060e060e02170b23040e020a0f4d000c0e"><span class="__cf_email__" data-cfemail="650d0009154b001d11170008000804110d250208040c094b060a08">[email&#160;protected]</span></a>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/2.1.0.5.2/fullscreen.js"></script>
+</body>
+<script src="js/iframechecker.js"></script>
+</html>
